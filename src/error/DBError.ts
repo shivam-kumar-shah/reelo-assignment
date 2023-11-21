@@ -5,8 +5,4 @@ export class DBError extends BaseError {
     super(500, name, message);
     Error.captureStackTrace(this, this.constructor);
   }
-
-  toString() {
-    return `${this.name}: ${this.message}`;
-  }
 }

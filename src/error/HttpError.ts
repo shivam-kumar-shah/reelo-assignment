@@ -5,8 +5,4 @@ export class HttpError extends BaseError {
     super(statusCode, name, message);
     Error.captureStackTrace(this, this.constructor);
   }
-
-  toString() {
-    return `${this.statusCode}: ${this.name}, ${this.message}`;
-  }
 }

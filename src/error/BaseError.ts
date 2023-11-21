@@ -7,5 +7,7 @@ export abstract class BaseError extends Error {
     super(message);
   }
 
-  abstract toString(): string;
+  toString() {
+    return `${this.statusCode}: ${this.name}, ${this.message}`;
+  }
 }
