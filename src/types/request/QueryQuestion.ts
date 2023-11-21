@@ -1,4 +1,4 @@
-import { Difficulty } from "./enums/DifficultyEnum";
+import { Difficulty } from "../enums/DifficultyEnum";
 
 export interface QueryQuestion {
   totalMarks: number;
