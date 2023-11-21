@@ -7,7 +7,7 @@
     "serve": "node .",
     "start:dev": "nodemon .",
     "build:dev": "tsc --watch",
-    "build": "tsc ."
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
