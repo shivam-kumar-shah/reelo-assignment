@@ -1,0 +1,25 @@
+{
+  "questions": [
+    {
+      "statement": "Hello World",
+      "subject": "english",
+      "topic": "idk",
+      "difficulty": "easy",
+      "marks": 50
+    },
+    {
+      "statement": "Hello World",
+      "subject": "english",
+      "topic": "idk",
+      "difficulty": "hard",
+      "marks": 50
+    },
+    {
+      "statement": "Hello World",
+      "subject": "english",
+      "topic": "idk",
+      "difficulty": "medium",
+      "marks": 50
+    }
+  ]
+}

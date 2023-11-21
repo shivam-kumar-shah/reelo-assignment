@@ -22,7 +22,7 @@ export abstract class DB<T> {
     DB._config = config;
   }
 
-  async get(): Promise<T[] | undefined> {
+  async get(): Promise<T[]> {
     const result = await DB.DBInstance.getObjectDefault<T[]>(this._path, []);
     return result;
   }
@@ -35,9 +35,9 @@ export abstract class DB<T> {
     return result;
   }
 
-  async queryData(filterFunction: FindCallback): Promise<T[] | undefined> {
+  async queryData(filterFunction: (item: T) => boolean): Promise<T[]> {
     const result = await DB.DBInstance.filter<T>(this._path, filterFunction);
-    return result;
+    return result ?? [];
   }
 
   async delete(data: T): Promise<void> {
