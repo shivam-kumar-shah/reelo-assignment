@@ -1,7 +1,7 @@
 import { RequestHandler, query } from "express";
 import { Questionaire } from "../models";
 import { ApiResponse } from "../types/response";
-import { QueryQuestion } from "../types/request";
+import { QueryQuestion } from "../dto";
 import { prepareQuestionare } from "../lib";
 
 export const getAllQuestions: RequestHandler<{}, ApiResponse> = async (

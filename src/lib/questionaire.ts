@@ -1,6 +1,6 @@
 import { Questionaire } from "../models";
 import { Question } from "../types";
-import { QueryQuestion } from "../types/request";
+import { QueryQuestion } from "../dto";
 
 const filterQuestions = (questions: Question[], marks: number) => {
   // Sliding window technique

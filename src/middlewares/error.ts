@@ -1,4 +1,5 @@
 import { ErrorRequestHandler } from "express";
+import { BaseError } from "../error/BaseError";
 
 export const errorHandler: ErrorRequestHandler = async (
   error,
@@ -6,8 +7,7 @@ export const errorHandler: ErrorRequestHandler = async (
   res,
   next
 ) => {
-  console.log(error.toString());
-  res.status(error.statusCode || 500).send({
+  return res.status(error.statusCode || 500).send({
     name: error.name,
     message: error.message,
     statusCode: error.statusCode,
