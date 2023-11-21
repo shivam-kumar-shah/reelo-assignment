@@ -23,10 +23,7 @@ export abstract class DB<T> {
   }
 
   async get(): Promise<T[] | undefined> {
-    const result = await DB.DBInstance.getObjectDefault<T[]>(
-      this._path,
-      undefined
-    );
+    const result = await DB.DBInstance.getObjectDefault<T[]>(this._path, []);
     return result;
   }
 
