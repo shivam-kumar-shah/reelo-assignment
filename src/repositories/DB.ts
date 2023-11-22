@@ -1,4 +1,4 @@
-import { JsonDB, FindCallback, Config } from "node-json-db";
+import { Config, JsonDB } from "node-json-db";
 import { DBConfig } from "../types";
 
 export abstract class DB<T> {

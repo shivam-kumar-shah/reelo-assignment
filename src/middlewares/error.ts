@@ -1,5 +1,4 @@
 import { ErrorRequestHandler } from "express";
-import { BaseError } from "../error/BaseError";
 
 export const errorHandler: ErrorRequestHandler = async (
   error,

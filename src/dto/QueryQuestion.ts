@@ -1,5 +1,5 @@
 import { Schema } from "express-validator";
-import { Difficulty } from "../types/enums/DifficultyEnum";
+import { Difficulty } from "../types";
 
 export interface QueryQuestion {
   totalMarks: number;

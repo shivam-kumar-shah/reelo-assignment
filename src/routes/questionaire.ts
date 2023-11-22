@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { getAllQuestions, getQuestionare } from "../controllers";
 import { checkSchema } from "express-validator";
+import { getAllQuestions, getQuestionare } from "../controllers";
 import { QueryQuestionSchema } from "../dto";
-import { validator } from "../middlewares/validator";
+import { validator } from "../middlewares";
 
 const questionRouter = Router();
 

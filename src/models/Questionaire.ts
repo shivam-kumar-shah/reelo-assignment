@@ -1,6 +1,5 @@
-import { JsonDB } from "node-json-db";
 import { DB } from "../repositories";
-import { DBConfig, Question } from "../types";
+import { Question } from "../types";
 
 export class Questionaire extends DB<Question> {
   private static _instance: Questionaire;

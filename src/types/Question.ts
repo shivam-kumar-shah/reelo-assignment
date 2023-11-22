@@ -1,5 +1,4 @@
-import { Difficulty } from "./enums/DifficultyEnum";
-import { Subject } from "./enums/SubjectEnum";
+import { Difficulty, Subject } from "./enums";
 
 export interface Question {
   statement: string;

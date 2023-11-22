@@ -1,8 +1,8 @@
-import express from "express";
 import { config } from "dotenv";
+import express from "express";
 import { initServer } from "./lib";
+import { errorHandler } from "./middlewares";
 import { questionRouter } from "./routes";
-import { errorHandler } from "./middlewares/error";
 
 config();
 
