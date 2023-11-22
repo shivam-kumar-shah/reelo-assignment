@@ -5,21 +5,63 @@
       "subject": "english",
       "topic": "idk",
       "difficulty": "easy",
-      "marks": 50
+      "marks": 10
     },
     {
       "statement": "Hello World",
       "subject": "english",
+      "topic": "idk",
+      "difficulty": "easy",
+      "marks": 10
+    },
+    {
+      "statement": "Hello World",
+      "subject": "english",
+      "topic": "idk",
+      "difficulty": "easy",
+      "marks": 10
+    },
+    {
+      "statement": "Bye World",
+      "subject": "maths",
       "topic": "idk",
       "difficulty": "hard",
       "marks": 50
     },
     {
-      "statement": "Hello World",
-      "subject": "english",
+      "statement": "Bye World",
+      "subject": "maths",
+      "topic": "idk",
+      "difficulty": "hard",
+      "marks": 50
+    },
+    {
+      "statement": "Bye World",
+      "subject": "maths",
+      "topic": "idk",
+      "difficulty": "hard",
+      "marks": 50
+    },
+    {
+      "statement": "Great World",
+      "subject": "physics",
       "topic": "idk",
       "difficulty": "medium",
-      "marks": 50
+      "marks": 20
+    },
+    {
+      "statement": "Great World",
+      "subject": "physics",
+      "topic": "idk",
+      "difficulty": "medium",
+      "marks": 20
+    },
+    {
+      "statement": "Great World",
+      "subject": "physics",
+      "topic": "idk",
+      "difficulty": "medium",
+      "marks": 20
     }
   ]
 }
