@@ -1,6 +1,6 @@
 import { Questionaire } from "../models";
 import { Question } from "../types";
-import { QueryQuestion } from "../dto";
+import { QueryQuestionDTO } from "../dto";
 
 const filterQuestions = (questions: Question[], marks: number) => {
   // Sliding window technique
@@ -24,17 +24,17 @@ const filterQuestions = (questions: Question[], marks: number) => {
   return ans;
 };
 
-export const prepareQuestionare = (query: QueryQuestion) => {
+export const prepareQuestionare = async (query: QueryQuestionDTO) => {
   const { split, totalMarks } = query;
   let answer: Question[] = [];
-  split.forEach(async (item) => {
-    const { difficulty, weightageInPercentage } = item;
+  for (let i = 0; i < split.length; i++) {
+    const { difficulty, weightageInPercentage } = split[i];
     const marks = Math.floor((weightageInPercentage * totalMarks) / 100);
     const allQuestions = await Questionaire.Instance.queryData(
       (item) => item.difficulty === difficulty
     );
     const questions = filterQuestions(allQuestions, marks);
     answer = answer.concat(questions);
-  });
+  }
   return answer;
 };

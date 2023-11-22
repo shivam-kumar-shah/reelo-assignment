@@ -1,7 +1,7 @@
 import { Schema } from "express-validator";
 import { Difficulty } from "../types";
 
-export interface QueryQuestion {
+export interface QueryQuestionDTO {
   totalMarks: number;
   split: {
     difficulty: Difficulty;
